@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 
 var index = require('./routes/index');
-var post = require('./routes/post');
 
 
 var app = express();
@@ -15,19 +14,19 @@ var app = express();
 // view engine setup
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
+app.set('views', path.join(__dirname,'views'));
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-app.use(express.static(__dirname + 'public'));
+app.use('/',express.static(path.join(__dirname , 'public')));
 
 
 
 
 
 app.use('/', index);
-app.use('/post', post);
 
 
 
