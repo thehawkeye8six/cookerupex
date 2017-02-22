@@ -6,4 +6,9 @@ router.get('/post', function(req, res) {
   res.render('post', {title:'Hello THere'});
 });
 
+router.post('/post', function(req, res) {
+
+});
+
+
 module.exports = router;

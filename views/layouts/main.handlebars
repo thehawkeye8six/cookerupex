@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookerup</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--STYLES-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <!--STYLES END-->
+    <!--SCRIPTS-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!--SCRIPTS END-->
+</head>
+
+<body>
+<header>
+    <nav class="navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/" style="color: #118798;">CookerUp</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/post">Posts</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/post/new">New Post</a></li>
+                <li><a href="/user/new"><span></span> Sign Up</a></li>
+                <li><a href=""><span></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container container-fluid center-block" style="padding-top: 5em; padding-bottom: 6em; ">
+       {{{body}}}
+    </div>
+</header>
+<footer class="navbar-fixed-bottom navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <p style="text-align: center;color: #999999; padding-top: 1em;">&copy; CookerUp 2017</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

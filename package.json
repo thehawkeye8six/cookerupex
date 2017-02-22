@@ -15,6 +15,7 @@
     "node-mysql": "^0.4.2",
     "sequelize": "^3.30.2",
     "sequelize-cli": "^2.5.1",
-    "static-favicon": "~1.0.0"
+    "static-favicon": "~1.0.0",
+    "express-handlebars": "*"
   }
 }
