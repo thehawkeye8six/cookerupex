@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "root",
+    "username": "coot",
     "password": "Fuzzball1",
     "database": "cookerup",
     "host": "127.0.0.1",
@@ -8,8 +8,8 @@
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "Fuzzball1",
+    "database": "cookerup",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

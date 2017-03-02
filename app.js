@@ -8,6 +8,15 @@ var exphbs  = require('express-handlebars');
 
 var index = require('./routes/index');
 
+var Sequelize = require('sequelize')
+    , mysql = require('mysql');
+
+config = require("./config/config.json");
+db = config.test;
+
+var sequelize = new Sequelize(db.database, db.host, db.password, {
+    dialect: 'mysql'
+});
 
 var app = express();
 
@@ -23,14 +32,7 @@ app.use(cookieParser());
 app.use('/',express.static(path.join(__dirname , 'public')));
 
 
-
-
-
 app.use('/', index);
-
-
-
-
 
 
 
@@ -40,12 +42,6 @@ app.use(function(req, res, next) {
     err.status = 404;
     next(err);
 });
-
-
-
-
-
-
 
 /// error handlers
 
