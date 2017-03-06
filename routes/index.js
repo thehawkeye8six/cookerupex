@@ -31,7 +31,6 @@ router.get('/newPost', function(req, res) {
 
 router.post('/newPost', function(req, res) {
   // insert to db here
-    //sequelize.query('INSERT INTO "Posts" ("id","post_category") VALUES (DEFAULT,post_category');
   db.Post.create({post_category:req.body.post_category,post_title:req.body.post_title,post_description:req.body.post_description});
   //db.
   res.render('showPost', {title:'Submit'});
