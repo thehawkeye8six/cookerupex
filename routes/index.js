@@ -16,7 +16,7 @@ router.get('/post', function(req, res) {
     db.Post.findAll({
         where: {
             id: {
-                $ne: 0
+                $eq: 1
             }
         }
     });
@@ -31,9 +31,14 @@ router.get('/newPost', function(req, res) {
 
 router.post('/newPost', function(req, res) {
   // insert to db here
-  db.Post.create({post_category:req.body.post_category,post_title:req.body.post_title,post_description:req.body.post_description});
+  db.Post.create({
+      post_category:req.body.post_category,
+      post_title:req.body.post_title,
+      post_description:req.body.post_description
+    });
   //db.
-  res.render('showPost', {title:'Submit'});
+
+  res.render('showPost', {title:'Submit',post_category:req.body.post_category,post_title:req.body.post_title,post_description:req.body.post_description});
 });
 
 router.get('/showPost', function(req, res) {
