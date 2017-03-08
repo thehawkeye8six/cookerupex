@@ -13,19 +13,21 @@ router.get('/', function (req, res) {
 /* GET post . */
 router.get('/post', function (req, res) {
     //go get all items from db with ids... render in list
-    db.Post.findAll({
-        where: {
-            id: {
-                $eq: 1
-            }
-        }
-    });
+    Promise.resolve()
+        .then(function(){
+            return db.Post.findAll({
+                where: {
+                    id: {
+                        $ne: 0
+                    }
+                }
+            });
+        })
+        .then(function(posts){
 
-    res.render('post', {
-        post_category: req.body.post_category,
-        post_title: req.body.post_title,
-        post_description: req.body.post_description
-    });
+            res.render('post', {posts: posts});
+        });
+
 });
 
 
@@ -39,6 +41,9 @@ router.post('/newPost', function (req, res) {
         post_category: req.body.post_category,
         post_title: req.body.post_title,
         post_description: req.body.post_description
+    });
+    db.Ingredient.create({
+
     });
     //db.
 

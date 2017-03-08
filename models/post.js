@@ -9,7 +9,7 @@ module.exports = function (sequelize, DataTypes) {
         {
             classMethods: {
                 associate: function (models) {
-                    Post.hasMany(models.ingredient, {
+                    Post.hasMany(models.Ingredient, {
                             foreignKey: 'recipe_id',
                             constraints: false
                         }
