@@ -7,7 +7,21 @@ var sequelize = require('../app.js').sequelize;
 /* GET home page. */
 router.get('/', function (req, res) {
     //go get all items from db with specific query
-    res.render('index', {title: 'Express'});
+    Promise.resolve()
+        .then(function(){
+            return db.Post.findAll({
+                where: {
+                    featured: {
+                        $ne: 0
+                    }
+                }
+            });
+        })
+        .then(function(posts){
+
+            res.render('/index', {posts: posts});
+        });
+
 });
 
 /* GET post . */
@@ -56,7 +70,6 @@ router.post('/newPost', function (req, res) {
 });
 
 router.get('/showPost', function (req, res) {
-    //go get the id from url ... go get from db
-    res.render('showPost', {title: 'Hello THere'});
+
 });
 module.exports = router;
