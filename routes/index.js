@@ -11,15 +11,15 @@ router.get('/', function (req, res) {
         .then(function(){
             return db.Post.findAll({
                 where: {
-                    featured: {
+                    id: {
                         $ne: 0
                     }
                 }
             });
         })
         .then(function(posts){
-
-            res.render('/index', {posts: posts});
+            console.log("posts:" + posts.length);
+            res.render('index', {posts: posts});
         });
 
 });
@@ -70,6 +70,26 @@ router.post('/newPost', function (req, res) {
 });
 
 router.get('/showPost', function (req, res) {
+
+
+    Promise.resolve()
+        .then(function(){
+            return db.Post.findOne({
+                where: {
+                    id: req.query.id
+                }
+            });
+        })
+        .then(function(post){
+
+            res.render('showPost', {
+
+                title: 'Display',
+                post_category: post.post_category,
+                post_title: post.post_title,
+                post_description: post.post_description
+            });
+        });
 
 });
 module.exports = router;

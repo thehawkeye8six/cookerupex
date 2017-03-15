@@ -4,7 +4,7 @@
     <div id="category3" class="col-md-2">Pub</div>
     <div id="category4" class="col-md-2">Smoothies</div>
     <div id="category5" class="col-md-2">Baking</div>
-    <div id="category6" class="col-md-2">Desert</div>
+    <div id="category6" class="col-md-2">Dessert</div>
 </div>
 
 <h4>
@@ -19,3 +19,23 @@
 <hr>
 
 
+<div class="container container-table" >
+    <div class="row vertical-center-row">
+        {{#posts}}
+            <a href="/showPost/{{post_id}}" style="color: inherit;">
+                <div class="col-sm-6"  style="width: 15em; padding-top: 5em">
+                    <div class="card-deck" style="width: 20rem;">
+                        <div class="card-block" style="background-color: white; box-shadow: 3px 3px 3px #888888;">
+                            <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px" width="200px">
+                            <div class="card-block">
+                                <h4 class="card-title" style="padding-left: 3px;">{{post_title}}</h4>
+                                <p class="card-text" style="padding-left: 3px;">{{post_description}}</p>
+                                <p class="card-text" style="padding-left: 3px;">{{post_category}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {{/posts}}
+    </div>
+</div>
