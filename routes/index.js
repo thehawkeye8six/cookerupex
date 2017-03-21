@@ -3,7 +3,6 @@ var router = express.Router();
 var db = require('../models');
 var sequelize = require('../app.js').sequelize;
 
-
 /* GET home page. */
 router.get('/', function (req, res) {
     //go get all items from db with specific query
@@ -11,7 +10,7 @@ router.get('/', function (req, res) {
         .then(function(){
             return db.Post.findAll({
                 where: {
-                    id: {
+                    featured: {
                         $ne: 0
                     }
                 }
@@ -54,10 +53,44 @@ router.post('/newPost', function (req, res) {
     db.Post.create({
         post_category: req.body.post_category,
         post_title: req.body.post_title,
-        post_description: req.body.post_description
+        post_description: req.body.post_description,
+    });
+    db.Amount.create({
+        amount_1: req.body.amount_1,
+        amount_2: req.body.amount_2,
+        amount_3: req.body.amount_3,
+        amount_4: req.body.amount_4,
+        amount_5: req.body.amount_5,
+        amount_6: req.body.amount_6,
+        amount_7: req.body.amount_7,
+        amount_8: req.body.amount_8,
+        amount_9: req.body.amount_9,
+        amount_10: req.body.amount_10
+    });
+
+    db.Unit.create({
+        unit_1: req.body.unit_1,
+        unit_2: req.body.unit_2,
+        unit_3: req.body.unit_3,
+        unit_4: req.body.unit_4,
+        unit_5: req.body.unit_5,
+        unit_6: req.body.unit_6,
+        unit_7: req.body.unit_7,
+        unit_8: req.body.unit_8,
+        unit_9: req.body.unit_9,
+        unit_10: req.body.unit_10
     });
     db.Ingredient.create({
-
+        ingredient_1: req.body.ingredient_1,
+        ingredient_2: req.body.ingredient_2,
+        ingredient_3: req.body.ingredient_3,
+        ingredient_4: req.body.ingredient_4,
+        ingredient_5: req.body.ingredient_5,
+        ingredient_6: req.body.ingredient_6,
+        ingredient_7: req.body.ingredient_7,
+        ingredient_8: req.body.ingredient_8,
+        ingredient_9: req.body.ingredient_9,
+        ingredient_10: req.body.ingredient_10
     });
     //db.
 

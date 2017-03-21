@@ -5,7 +5,9 @@ module.exports = function (sequelize, DataTypes) {
             post_title: DataTypes.STRING(25),
             post_description: DataTypes.STRING(50),
             post_category: DataTypes.STRING(25),
-            featured: DataTypes.INTEGER(10)
+            featured: DataTypes.INTEGER(10),
+            sponsored: DataTypes.INTEGER(10),
+            image_path: DataTypes.STRING(35)
         },
         {
             classMethods: {

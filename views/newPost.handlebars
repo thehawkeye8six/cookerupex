@@ -1,8 +1,7 @@
-<form action="/newPost" method="post" name="newPost" class="register-form" enctype="application/x-www-form-urlencoded"
-      onsubmit="return validateForm()">
+<form action="/newPost" method="post" name="newPost" class="register-form" enctype="application/x-www-form-urlencoded">
 
     <label>Image</label>
-    <input type="file" name="pic" accept="image/*">
+    <input type="file" name="image_path" accept="image/*">
     <label>Title</label>
     <input name="post_title" style="width: 40em;" class="form-control" type="text">
     <label>Description</label>
@@ -24,11 +23,191 @@
             </th>
             <th>
                 <label style="padding-right: 4em;">Amount</label>
-                <input name="amount" style="width: 6em;" class="form-control" type="text">
+                <input name="amount_1" style="width: 6em;" class="form-control" type="text">
             </th>
             <th>
                 <label>Units</label>
-                <select name="post_unit" class="form-control" style="width: 10em;">
+                <select name="unit_1" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 2</label>
+                <input name="ingredient_2" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_2" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_2" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 3</label>
+                <input name="ingredient_3" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_3" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_3" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 4</label>
+                <input name="ingredient_4" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_4" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_4" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 5</label>
+                <input name="ingredient_5" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_5" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_5" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 6</label>
+                <input name="ingredient_6" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_6" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_6" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 7</label>
+                <input name="ingredient_7" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_7" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_7" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 8</label>
+                <input name="ingredient_8" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_8" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_8" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 9</label>
+                <input name="ingredient_9" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_9" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_9" class="form-control" style="width: 10em;">
+                    <option value=""></option>
+                    <option value="cup">Cup</option>
+                    <option value="tsp">Tsp</option>
+                    <option value="tbsp">Tbsp</option>
+                    <option value="pinch">Pinch</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label style="padding-right: 16em;">Ingredient 10</label>
+                <input name="ingredient_10" style="width: 20em; " class="form-control" type="text">
+            </th>
+            <th>
+                <label style="padding-right: 4em;">Amount</label>
+                <input name="amount_10" style="width: 6em;" class="form-control" type="text">
+            </th>
+            <th>
+                <label>Units</label>
+                <select name="unit_10" class="form-control" style="width: 10em;">
                     <option value=""></option>
                     <option value="cup">Cup</option>
                     <option value="tsp">Tsp</option>
