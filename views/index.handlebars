@@ -1,5 +1,5 @@
 <div class="row" class="container-fluid" style="padding-top:20px;">
-    <a href="/category/{{category}}" >
+    <a href="/category/{{bbq}}" >
      <div id="category1" class="col-md-2">Bbq</div>
     </a>
     <a href="/category" >
@@ -21,7 +21,6 @@
 <hr>
 <h4 style="text-align: center;">Featured</h4>
 <hr>
-
 
 <div class="container container-table" >
     <div class="row vertical-center-row">
@@ -47,3 +46,23 @@
 <hr>
 <h4 style="text-align: center;">Sponsored</h4>
 <hr>
+<div class="container container-table" >
+    <div class="row vertical-center-row">
+        {{#sponsor}}
+            <a href="/showPost/{{post_id}}" style="color: inherit;">
+                <div class="col-sm-6"  style="width: 15em; padding-top: 5em">
+                    <div class="card-deck" style="width: 20rem;">
+                        <div class="card-block" style="background-color: white; box-shadow: 3px 3px 3px #888888;">
+                            <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px" width="200px">
+                            <div class="card-block">
+                                <h4 class="card-title" style="padding-left: 3px;">{{post_title}}</h4>
+                                <p class="card-text" style="padding-left: 3px;">{{post_description}}</p>
+                                <p class="card-text" style="padding-left: 3px;">{{post_category}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {{/sponsor}}
+    </div>
+</div>

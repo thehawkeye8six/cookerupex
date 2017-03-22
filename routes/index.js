@@ -20,6 +20,20 @@ router.get('/', function (req, res) {
             res.render('index', {posts: posts});
         });
 
+    Promise.resolve()
+        .then(function(){
+            return db.Post.findAll({
+                where: {
+                    sponsored: {
+                        $ne: 0
+                    }
+                }
+            });
+        })
+        .then(function(sponsor){
+            res.render('index', {sponsor: sponsor});
+        });
+
 });
 
 /* GET home page. */
@@ -27,7 +41,7 @@ router.get('/category', function (req, res) {
     //go get all items from db with specific query
     Promise.resolve()
         .then(function(){
-            return db.Post.findAll({
+            return db.Post.findOne({
                 where: {
                     category: req.query.category
                 }
@@ -120,8 +134,6 @@ router.post('/newPost', function (req, res) {
 });
 
 router.get('/showPost', function (req, res) {
-
-
     Promise.resolve()
         .then(function(){
             return db.Post.findOne({
