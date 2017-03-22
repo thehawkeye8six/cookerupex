@@ -17,8 +17,23 @@ router.get('/', function (req, res) {
             });
         })
         .then(function(posts){
-            console.log("posts:" + posts.length);
             res.render('index', {posts: posts});
+        });
+
+});
+/* GET home page. */
+router.get('/Bbq', function (req, res) {
+    //go get all items from db with specific query
+    Promise.resolve()
+        .then(function(){
+            return db.Post.findAll({
+                where: {
+                    category:'bbq'
+                }
+            });
+        })
+        .then(function(posts){
+            res.render('Bbq', {posts: posts});
         });
 
 });
@@ -97,7 +112,8 @@ router.post('/newPost', function (req, res) {
     res.render('showPost', {
         title: 'Submit',
         post_category: req.body.post_category,
-        post_title: req.body.post_title,
+        post_title:
+        req.body.post_title,
         post_description: req.body.post_description
     });
 });
