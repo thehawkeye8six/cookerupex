@@ -21,19 +21,20 @@ router.get('/', function (req, res) {
         });
 
 });
+
 /* GET home page. */
-router.get('/Bbq', function (req, res) {
+router.get('/category', function (req, res) {
     //go get all items from db with specific query
     Promise.resolve()
         .then(function(){
             return db.Post.findAll({
                 where: {
-                    category:'bbq'
+                    category: req.query.category
                 }
             });
         })
         .then(function(posts){
-            res.render('Bbq', {posts: posts});
+            res.render('category', {posts: posts});
         });
 
 });
