@@ -24,6 +24,8 @@ $(document).ready(function () {
 });
 
 function search() {
-    var searchBox = $("#search").val();
-    console.info(searchBox);
+    txtSearch = $("#search").val();
+    console.info(txtSearch);
+
+
 }

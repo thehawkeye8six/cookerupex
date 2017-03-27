@@ -68,7 +68,6 @@ router.get('/post', function (req, res) {
         });
 });
 
-
 router.get('/newPost', function (req, res) {
     res.render('newPost', {title: 'Hello THere'});
 });
