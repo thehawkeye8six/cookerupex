@@ -1,20 +1,17 @@
 "use strict";
 
 module.exports = function (sequelize, DataTypes) {
-    var recipeIngredient = sequelize.define("recipeIngredient", {
+    var RecipeIngredient = sequelize.define("RecipeIngredient", {
         ingredient_id: DataTypes.INTEGER,
-        qty: DataTypes.DECIMAL(10,2),
-        unit_id: DataTypes.INTEGER
+        directions: DataTypes.STRING(200)
     },{
         paranoid:true,
         classMethods:{
             associate: function (models) {
-                recipeIngredient.belongsTo(models.Post);
-                recipeIngredient.belongsTo(models.Ingredient);
-                recipeIngredient.belongsTo(models.Unit);
+                RecipeIngredient.belongsTo(models.Post);
+                RecipeIngredient.belongsTo(models.Ingredient);
             }
         }
     });
-
-    return recipeIngredient;
+    return RecipeIngredient;
 };

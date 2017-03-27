@@ -48,7 +48,6 @@ router.get('/category', function (req, res) {
         .then(function (posts) {
             res.render('category', {posts: posts});
         });
-
 });
 
 /* GET post . */
@@ -65,10 +64,8 @@ router.get('/post', function (req, res) {
             });
         })
         .then(function (posts) {
-
             res.render('post', {posts: posts});
         });
-
 });
 
 
@@ -79,27 +76,34 @@ router.get('/newPost', function (req, res) {
 router.post('/newPost', function (req, res) {
     // insert to db here
     //// create promise chain
-    db.Post.create({
-        category: req.body.category,
-        title: req.body.title,
-        description: req.body.description,
-    });
-
-    //surround with for loop
-    db.Ingredient.create({
-        amount:req.body['amount_' + i],
-        unit:req.body['unit_' + i],
-        description: req.body['description' + i]
-        post_id:
-
-    });
-    
-    res.render('showPost', {
-        title: 'Submit',
-        category: req.body.category,
-        title: req.body.title,
-        description: req.body.description
-    });
+    Promise.resolve()
+        .then(function () {
+            db.Post.create({
+                category: req.body.category,
+                title: req.body.title,
+                description: req.body.description,
+            });
+        })
+        .then(function () {
+            db.Ingredient.create({
+                //surround with for loop
+                ingredient: req.body['ingredient' + i],
+                amount: req.body['amount_' + i],
+                unit: req.body['unit_' + i]
+            });
+        })
+        .then(function () {
+            db.RecipeIngredient.create({
+                directions: req.body.directions,
+            });
+        })
+        .then(function () {
+            res.render('showPost', {
+                category: req.body.category,
+                title: req.body.title,
+                description: req.body.description
+            });
+        })
 });
 
 router.get('/showPost', function (req, res) {
@@ -112,15 +116,11 @@ router.get('/showPost', function (req, res) {
             });
         })
         .then(function (post) {
-
             res.render('showPost', {
-
-                title: 'Display',
                 category: post.category,
                 title: post.title,
                 description: post.description
             });
         });
-
 });
 module.exports = router;
