@@ -22,3 +22,8 @@ $(document).ready(function () {
         $(this).parent().parent().remove();
     });
 });
+
+function search() {
+    var searchBox = $("#search").val();
+    console.info(searchBox);
+}
