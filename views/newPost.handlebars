@@ -1,7 +1,7 @@
 <form action="/newPost" method="post" name="newPost" class="register-form" enctype="application/x-www-form-urlencoded">
 
     <label>Image</label>
-    <input type="file" name="image_path" accept="image/*">
+    <input type="file" name="image_path" class="btn btn-default " accept="image/*">
     <br>
     <label>Title</label>
     <input name="title" style="width: 40em;" class="form-control" type="text">
@@ -20,23 +20,35 @@
         <option value="Dessert">Dessert</option>
     </select>
     <br>
+    <label>Ingredients</label>
     <table class="form-table" id="table1">
         <tr>
             <td>
-                <input type="text" class="code" id="ingredient" name="ingredient[i]" value="" placeholder="Ingredient"/>&nbsp;
-                <input type="text" class="code" id="amount" name="amount[i]" value="" placeholder="Amount"/>&nbsp;
-                    <select class="code" name="unit[i]" style="width: 10em;">
-                        <option value="">Unit</option>
-                        <option value="Cup">Cup</option>
-                        <option value="Tsp">Tsp</option>
-                        <option value="Tbsp">Tbsp</option>
-                        <option value="Pinch">Pinch</option>
-                        <option value="Piece">Piece</option>
-                    </select>
-                <a href="javascript:void(0);" class="addCF">Add</a>
+                <input type="text" class="code btn btn-default" style="width: 15em;" id="ingredient"
+                       name="ingredient[i]" value="" placeholder="Ingredient"/>&nbsp;
+                <input type="text" class="code btn btn-default" style="width: 6em;" id="amount" name="amount[i]"
+                       value="" placeholder="Amount"/>&nbsp;
+                <select class="code btn btn-default" name="unit[i]" style="width: 10em;">
+                    <option value="">Unit</option>
+                    <option value="Cup">Cup</option>
+                    <option value="Dash">Dash</option>
+                    <option value="Drop">Drop</option>
+                    <option value="Litre">Litre</option>
+                    <option value="mL">mL</option>
+                    <option value="Piece">Piece</option>
+                    <option value="Pinch">Pinch</option>
+                    <option value="Quart">Quart</option>
+                    <option value="Tsp">Tsp</option>
+                    <option value="Tbsp">Tbsp</option>
+                </select>&nbsp;
+                <input type="button" style="width:7em; background-color: #3f5eff; color: white; font-weight: bold;" class="addCF btn btn-default" value="Add">
+
             </td>
         </tr>
     </table>
+    <br>
+
+    <br>
     <br>
     <label>Directions</label>
     <textarea class="form-control" name="directions" style="width: 40em; height: 10em" title=""></textarea>

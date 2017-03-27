@@ -85,12 +85,14 @@ router.post('/newPost', function (req, res) {
             });
         })
         .then(function () {
-            db.Ingredient.create({
-                //surround with for loop
-                ingredient: req.body['ingredient' + i],
-                amount: req.body['amount_' + i],
-                unit: req.body['unit_' + i]
-            });
+            for (i = 0; i < 0; i++) {
+                db.Ingredient.create({
+                    //surround with for loop
+                    ingredient: req.body['ingredient' + i],
+                    amount: req.body['amount' + i],
+                    unit: req.body['unit' + i]
+                });
+            }
         })
         .then(function () {
             db.RecipeIngredient.create({
