@@ -2,10 +2,13 @@
 
     <label>Image</label>
     <input type="file" name="image_path" accept="image/*">
+    <br>
     <label>Title</label>
     <input name="title" style="width: 40em;" class="form-control" type="text">
+    <br>
     <label>Description</label>
     <textarea class="form-control" name="description" style="width: 40em; height: 10em"></textarea>
+    <br>
     <label>Category</label>
     <select name="category" class="form-control" style="width: 40em;">
         <option value=""></option>
@@ -16,36 +19,27 @@
         <option value="Baking">Baking</option>
         <option value="Dessert">Dessert</option>
     </select>
-    </table>
-    <table>
+    <br>
+    <table class="form-table" id="table1">
         <tr>
-            <th>
-                <label style="padding-right: 16em;">Ingredient 1</label>
-                <input name="ingredient_1" style="width: 20em; " class="form-control" type="text">
-            </th>
-            <th>
-                <label style="padding-right: 4em;">Amount</label>
-                <input name="amount" style="width: 6em;" class="form-control" type="text">
-            </th>
-            <th>
-                <label>Units</label>
-                <select name="unit" class="form-control" style="width: 10em;">
-                    <option value=""></option>
-                    <option value="Cup">Cup</option>
-                    <option value="Tsp">Tsp</option>
-                    <option value="Tbsp">Tbsp</option>
-                    <option value="Pinch">Pinch</option>
-                    <option value="Piece">Piece</option>
-                </select>
-            </th>
+            <td>
+                <input type="text" class="code" id="ingredient" name="ingredient[i]" value="" placeholder="Ingredient"/>&nbsp;
+                <input type="text" class="code" id="amount" name="amount[i]" value="" placeholder="Amount"/>&nbsp;
+                    <select class="code" name="unit[i]" style="width: 10em;">
+                        <option value="">Unit</option>
+                        <option value="Cup">Cup</option>
+                        <option value="Tsp">Tsp</option>
+                        <option value="Tbsp">Tbsp</option>
+                        <option value="Pinch">Pinch</option>
+                        <option value="Piece">Piece</option>
+                    </select>
+                <a href="javascript:void(0);" class="addCF">Add</a>
+            </td>
         </tr>
     </table>
     <br>
-    <input type="button" value="Add Ingredient" name="plus" onclick="addIngredient"/>
-    <br>
     <label>Directions</label>
-    <textarea class="form-control" name="directions" style="width: 40em; height: 10em"></textarea>
+    <textarea class="form-control" name="directions" style="width: 40em; height: 10em" title=""></textarea>
     <hr>
     <input type="submit" class="btn btn-default " value="Submit Post">
-
 </form>
