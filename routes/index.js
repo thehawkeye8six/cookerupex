@@ -77,26 +77,41 @@ router.post('/newPost', function (req, res) {
     //// create promise chain
     Promise.resolve()
         .then(function () {
-            db.Post.create({
+           return db.Post.create({
                 category: req.body.category,
                 title: req.body.title,
-                description: req.body.description,
+                description: req.body.description
             });
         })
-        .then(function () {
-            for (i = 0; i < 0; i++) {
-                db.Ingredient.create({
-                    //surround with for loop
-                    ingredient: req.body['ingredient' + i],
-                    amount: req.body['amount' + i],
-                    unit: req.body['unit' + i]
-                });
+        .then(function (recipe) {
+            var promises = [];
+            for (var i = 1; ; i++) {
+                console.log('ing' + req.body['ingredient' + i]);
+                if (req.body['ingredient' + i]) {
+                    promises.push(
+                    Promise.resolve()
+                        .then(function () {
+                            return db.Ingredient.create({
+                                //surround with for loop
+                                ingredient: req.body['ingredient' + i],
+                                amount: req.body['amount' + i],
+                                unit: req.body['unit' + i]
+                            });
+                        })
+                        .then(function (ingredient) {
+                            return db.RecipeIngredient.create({
+                                directions: req.body.directions,
+                                IngredientId: ingredient.id,
+                                PostId: recipe.id
+                            });
+                        }))
+                } else {
+                    console.log('break');
+                    break;
+                }
             }
-        })
-        .then(function () {
-            db.RecipeIngredient.create({
-                directions: req.body.directions,
-            });
+            console.log('promise');
+            return Promise.all(promises);
         })
         .then(function () {
             res.render('showPost', {
