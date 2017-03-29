@@ -2,7 +2,6 @@
 
 module.exports = function (sequelize, DataTypes) {
     var RecipeIngredient = sequelize.define("RecipeIngredient", {
-        directions: DataTypes.STRING(200)
     },{
         paranoid:true,
         classMethods:{

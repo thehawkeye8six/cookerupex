@@ -50,6 +50,21 @@ router.get('/category', function (req, res) {
         });
 });
 
+router.get('/search', function (req, res) {
+    //go get all items from db with specific query
+    Promise.resolve()
+        .then(function () {
+            return db.Post.findAll({
+                where: {
+                    title: req.query.title
+                }
+            });
+        })
+        .then(function (posts) {
+            res.render('search', {posts: posts});
+        });
+});
+
 /* GET post . */
 router.get('/post', function (req, res) {
     //go get all items from db with ids... render in list
@@ -77,7 +92,7 @@ router.post('/newPost', function (req, res) {
     //// create promise chain
     Promise.resolve()
         .then(function () {
-           return db.Post.create({
+            return db.Post.create({
                 category: req.body.category,
                 title: req.body.title,
                 description: req.body.description
@@ -89,22 +104,22 @@ router.post('/newPost', function (req, res) {
                 console.log('ing' + req.body['ingredient' + i]);
                 if (req.body['ingredient' + i]) {
                     promises.push(
-                    Promise.resolve()
-                        .then(function () {
-                            return db.Ingredient.create({
-                                //surround with for loop
-                                ingredient: req.body['ingredient' + i],
-                                amount: req.body['amount' + i],
-                                unit: req.body['unit' + i]
-                            });
-                        })
-                        .then(function (ingredient) {
-                            return db.RecipeIngredient.create({
-                                directions: req.body.directions,
-                                IngredientId: ingredient.id,
-                                PostId: recipe.id
-                            });
-                        }))
+                        Promise.resolve()
+                            .then(function () {
+                                return db.Ingredient.create({
+                                    //surround with for loop
+                                    ingredient: req.body['ingredient' + i],
+                                    amount: req.body['amount' + i],
+                                    unit: req.body['unit' + i]
+                                });
+                            })
+                            .then(function (ingredient) {
+                                return db.RecipeIngredient.create({
+                                    directions: req.body.directions,
+                                    IngredientId: ingredient.id,
+                                    PostId: recipe.id
+                                });
+                            }))
                 } else {
                     console.log('break');
                     break;

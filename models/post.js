@@ -8,18 +8,6 @@ module.exports = function (sequelize, DataTypes) {
             featured: DataTypes.INTEGER(10),
             sponsored: DataTypes.INTEGER(10),
             image_path: DataTypes.STRING(35)
-        },
-        {
-            classMethods: {
-                associate: function (models) {
-                    Post.hasMany(models.Ingredient, {
-                            foreignKey: 'recipe_id',
-                            constraints: false
-                        }
-                    );
-
-                }
-            }
         });
     return Post;
 };

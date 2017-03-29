@@ -26,7 +26,5 @@ $(document).ready(function () {
 
 function search() {
     txtSearch = $("#search").val();
-    console.info(txtSearch);
-
-
+    window.location.href = "/search?title=" + txtSearch ;
 }
