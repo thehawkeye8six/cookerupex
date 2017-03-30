@@ -6,6 +6,7 @@ $(document).ready(function () {
             '<input type="text" class="code btn btn-default" style="width: 6em;" id="amount" name="amount' + i + '" value="" placeholder="Amount" /> &nbsp;' +
             '<select class="code btn btn-default" name="unit' + i + '" class="form-control" style="width: 10em;">' +
             '<option value="">Unit</option>' +
+            '<option value=""></option>' +
             '<option value="Cup">Cup</option>' +
             '<option value="Dash">Dash</option>' +
             '<option value="Drop">Drop</option>' +

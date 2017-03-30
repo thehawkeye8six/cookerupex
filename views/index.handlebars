@@ -1,43 +1,45 @@
 <div class="row" class="container-fluid" style="padding-top:20px;">
-    <input type="text" style="width:90%" name="search" id="search" class="btn btn-default" name="search" placeholder="Search..." >
-    <input type="button" style="width:9.5%;"  class="btn btn-default" value="Search" onclick="search()">
+    <input type="text" style="width:90%" name="search" id="search" class="btn btn-default" name="search"
+           placeholder="Search...">
+    <input type="button" style="width:9.5%;" class="btn btn-default" value="Search" onclick="search()">
 </div>
 <div class="row" class="container-fluid" style="padding-top:20px;">
-    <a href="/category?category=Bbq" >
-     <div id="category1" class="col-md-2">Bbq</div>
+    <a href="/category?category=Bbq">
+        <div id="category1" class="col-md-2">Bbq</div>
     </a>
-    <a href="/category?category=Pasta" >
-    <div id="category2" class="col-md-2">Pasta</div>
+    <a href="/category?category=Pasta">
+        <div id="category2" class="col-md-2">Pasta</div>
     </a>
-    <a href="/category?category=Pub" >
-    <div id="category3" class="col-md-2">Pub</div>
+    <a href="/category?category=Pub">
+        <div id="category3" class="col-md-2">Pub</div>
     </a>
-    <a href="/category?category=Liquids" >
-    <div id="category4" class="col-md-2">Liquids</div>
+    <a href="/category?category=Liquids">
+        <div id="category4" class="col-md-2">Liquids</div>
     </a>
-    <a href="/category?category=Baking" >
-    <div id="category5" class="col-md-2">Baking</div>
+    <a href="/category?category=Baking">
+        <div id="category5" class="col-md-2">Baking</div>
     </a>
-    <a href="/category?category=Dessert" >
-    <div id="category6" class="col-md-2">Dessert</div>
+    <a href="/category?category=Dessert">
+        <div id="category6" class="col-md-2">Dessert</div>
     </a>
 </div>
 <hr>
 <h4 style="text-align: center;">Featured</h4>
 <hr>
 
-<div class="container container-table" >
+<div class="container container-table" style="padding-right: 10%; padding-left: 10%;">
     <div class="row vertical-center-row">
         {{#posts}}
             <a href="/showPost?id={{id}}" style="color: inherit;">
-                <div class="col-sm-6"  style="width: 15em; padding-top: 5em">
+                <div class="col-sm-6" style="width: 15em; padding-top: 5em">
                     <div class="card-deck" style="width: 20rem;">
                         <div class="card-block" style="background-color: white; box-shadow: 3px 3px 3px #888888;">
-                            <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px" width="200px">
+                            <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px"
+                                 width="200px">
                             <div class="card-block">
                                 <h3 class="card-title" style="padding-left: 3px;">{{title}}</h3>
                                 <p class="card-text" style="padding-left: 3px;">{{description}}</p>
-                                <p class="card-text" style="padding-left: 3px;">{{category}}</p >
+                                <p class="card-text" style="padding-left: 3px;">{{category}}</p>
                             </div>
                         </div>
                     </div>
@@ -50,18 +52,19 @@
 <hr>
 <h4 style="text-align: center;">Sponsored</h4>
 <hr>
-<div class="container container-table" >
+<div class="container container-table">
     <div class="row vertical-center-row">
         {{#sponsored}}
             <a href="/showPost?id={{id}}" style="color: inherit;">
-                <div class="col-sm-6"  style="width: 15em; padding-top: 5em">
+                <div class="col-sm-6" style="width: 15em; padding-top: 5em">
                     <div class="card-deck" style="width: 20rem;">
                         <div class="card-block" style="background-color: white; box-shadow: 3px 3px 3px #888888;">
-                            <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px" width="200px">
+                            <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px"
+                                 width="200px">
                             <div class="card-block">
                                 <h3 class="card-title" style="padding-left: 3px;">{{title}}</h3>
                                 <p class="card-text" style="padding-left: 3px;">{{description}}</p>
-                                <p class="card-text" style="padding-left: 3px;">{{category}}</p >
+                                <p class="card-text" style="padding-left: 3px;">{{category}}</p>
                             </div>
                         </div>
                     </div>
