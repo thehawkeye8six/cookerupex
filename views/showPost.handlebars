@@ -33,7 +33,12 @@
 </div>
 <div style="float:left; width:74%; margin-left:10px;">
     <h3>Ingredients</h3>
-    <p>{{ingredient}}</p>
+    <p>{{#ingredient}}
+        {{ingredient}}
+        {{amount}}
+        {{unit}}
+
+        {{/ingredient}}</p>
     <hr>
     <h3>Directions</h3>
     <p>{{directions}}</p>

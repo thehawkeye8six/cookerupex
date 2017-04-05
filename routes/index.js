@@ -56,7 +56,9 @@ router.get('/search', function (req, res) {
         .then(function () {
             return db.Post.findAll({
                 where: {
-                    title: req.query.title
+                    title: {
+                        $like: '%' + req.query.title + '%'
+                    }
                 }
             });
         })
@@ -136,7 +138,8 @@ router.get('/showPost', function (req, res) {
             return db.Post.findOne({
                 where: {
                     id: req.query.id
-                }
+                },
+                include: [db.Ingredient]
             });
         })
         .then(function (post) {
@@ -144,7 +147,7 @@ router.get('/showPost', function (req, res) {
                 category: post.category,
                 title: post.title,
                 description: post.description,
-                ingredient: post.ingredient,
+                ingredient: post.Ingredients,
                 directions: post.directions
             });
         });
