@@ -34,7 +34,27 @@ router.get('/', function (req, res) {
         });
 });
 
-/* GET home page. */
+router.get('/showPost', function (req, res) {
+    Promise.resolve()
+        .then(function () {
+            return db.Post.findOne({
+                where: {
+                    id: req.query.id
+                },
+                include: [db.Ingredient]
+            });
+        })
+        .then(function (post) {
+            res.render('showPost', {
+                category: post.category,
+                title: post.title,
+                description: post.description,
+                ingredient: post.Ingredients,
+                directions: post.directions
+            });
+        });
+});
+
 router.get('/category', function (req, res) {
     //go get all items from db with specific query
     Promise.resolve()
@@ -122,34 +142,14 @@ router.post('/newPost', function (req, res) {
             }
             return Promise.all(promises);
         })
-        .then(function () {
+        .then(function (i) {
             res.render('showPost', {
                 category: req.body.category,
                 title: req.body.title,
                 description: req.body.description,
+                ingredient: req.body['ingredient' + i],
                 directions: req.body.directions
             });
         })
-});
-
-router.get('/showPost', function (req, res) {
-    Promise.resolve()
-        .then(function () {
-            return db.Post.findOne({
-                where: {
-                    id: req.query.id
-                },
-                include: [db.Ingredient]
-            });
-        })
-        .then(function (post) {
-            res.render('showPost', {
-                category: post.category,
-                title: post.title,
-                description: post.description,
-                ingredient: post.Ingredients,
-                directions: post.directions
-            });
-        });
 });
 module.exports = router;
