@@ -1,5 +1,5 @@
 <div class="row" class="container-fluid" style="padding-top:20px;">
-    <input type="text" style="width:90%" name="search" id="search" class="btn btn-default" name="search"
+    <input type="text" style="width:89%" name="search" id="search" class="btn btn-default" name="search"
            placeholder="Search...">
     <input type="button" style="width:9.5%;" class="btn btn-default" value="Search" onclick="search()">
 </div>
@@ -25,47 +25,30 @@
 </div>
 <h2 style="color:deepskyblue; text-align: center;">{{title}}</h2>
 <hr>
-<div style="float:left; text-align: center; width:25%; padding-right: 20px;">
-    <img src="/images/image.png" >
-    <h3>Ingredients</h3>
-    {{#ingredient}}
-        <div style="font-size: 16px; text-align: left;">
-            <img src="/images/ingredient.png" width="20px" height="20px">
-            {{ingredient}} -
-            {{amount}}
-            {{unit}}
-            <a style="float: right;" target="_blank"
-               href="https://www.amazon.ca/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={{ingredient}}">
-                <img src="/images/amazon.png" alt="Amazon" width="30px" height="auto"></a>
-            <a style="float: right;" target="_blank" href="https://www.walmart.ca/search/{{ingredient}}"><img src="/images/walmart.jpg" alt="Walmart" width="30px" height="auto"></a>
-        </div>
-        <hr>
-    {{/ingredient}}
-</div>
-
-<div style="float:left; text-align: left; width:49%; padding-left: 40px;">
-    <h3 style="text-align: center;">Directions</h3>
-    <p>{{directions}}</p>
-</div>
-
-<div style="float:left; text-align: left; width:25%; padding-left: 40px;">
-    <h3 style="text-align: center;">Check These Out!</h3>
-    <div class="row vertical-center-row">
-        {{#posts}}
-            <a href="/showPost?id={{id}}" style="color: inherit;">
-                <div class="col-sm-6"  style="width: 15em; padding-top: 5em">
-                    <div class="card-deck" style="width: 20rem;">
-                        <div class="card-block" style="background-color: white; box-shadow: 3px 3px 3px #888888;">
-                            <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px" width="200px">
-                            <div class="card-block">
-                                <h3 class="card-title" style="padding-left: 3px;">{{title}}</h3>
-                                <p class="card-text" style="padding-left: 3px;">{{description}}</p>
-                                <p class="card-text" style="padding-left: 3px;">{{category}}</p >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        {{/posts}}
+<div class="container-fluid">
+    <div style="float:left; text-align: center; width:49%; padding-right: 20px;">
+        <h3>Ingredients</h3>
+        {{#ingredient}}
+            <div style="font-size: 16px; text-align: left;">
+                <img src="/images/ingredient.png" width="20px" height="20px">
+                {{ingredient}} -
+                {{amount}}
+                {{unit}}
+                <a style="float: right;" target="_blank"
+                   href="https://www.amazon.ca/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords={{ingredient}}">
+                    <img src="/images/amazon.png" alt="Amazon" width="30px" height="auto"></a>
+                <a style="float: right;" target="_blank" href="https://www.walmart.ca/search/{{ingredient}}"><img
+                        src="/images/walmart.jpg" alt="Walmart" width="30px" height="auto"></a>
+            </div>
+            <hr>
+        {{/ingredient}}
     </div>
+    <div style="float:left; text-align: center; width:49%; padding-left: 40px;">
+        <img src="/images/image.png" style="text-align: center">
+    </div>
+</div>
+<hr>
+<div style="float:left;">
+    <h3 style="text-align: left;">Directions</h3>
+    <p>{{directions}}</p>
 </div>
