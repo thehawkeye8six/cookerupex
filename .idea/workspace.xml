@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97ed46ba-85e8-42a1-b0c5-22d11a637eaa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category.handlebars" afterPath="$PROJECT_DIR$/views/category.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/error.handlebars" afterPath="$PROJECT_DIR$/views/error.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.handlebars" afterPath="$PROJECT_DIR$/views/index.handlebars" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/post.handlebars" afterPath="$PROJECT_DIR$/views/post.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/search.handlebars" afterPath="$PROJECT_DIR$/views/search.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/showPost.handlebars" afterPath="$PROJECT_DIR$/views/showPost.handlebars" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="showPost.handlebars" pinned="false" current-in-tab="true">
+      <file leaf-file-name="showPost.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/showPost.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="18">
+              <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -38,8 +33,8 @@
       <file leaf-file-name="category.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/category.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="522">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -49,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/views/error.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+              <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -61,14 +56,10 @@
             <state relative-caret-position="288">
               <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding>
-                <marker date="1492021020642" expanded="true" signature="158:175" ph="..." />
-                <marker date="1492021020642" expanded="true" signature="250:262" ph="..." />
-                <marker date="1492021020642" expanded="true" signature="367:373" ph=" " />
-                <marker date="1492021020642" expanded="true" signature="445:456" ph="..." />
-                <marker date="1492021020642" expanded="true" signature="555:561" ph=" " />
-                <marker date="1492021020642" expanded="true" signature="664:676" ph="..." />
-                <marker date="1492021020642" expanded="true" signature="1367:1373" ph=" " />
-                <marker date="1492021020642" expanded="true" signature="1418:1484" ph="..." />
+                <marker date="1492021069542" expanded="true" signature="30:1664" ph="{...}" />
+                <marker date="1492021069542" expanded="true" signature="66:1555" ph="{...}" />
+                <marker date="1492021069542" expanded="true" signature="1609:1660" ph="{...}" />
+                <marker date="1492021069542" expanded="true" signature="1686:1783" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -84,12 +75,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.handlebars" pinned="false" current-in-tab="false">
+      <file leaf-file-name="post.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/post.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +90,8 @@
       <file leaf-file-name="search.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/search.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="252">
+              <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -108,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/views/index.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -173,10 +166,10 @@
         <option value="$PROJECT_DIR$/views/newPost.handlebars" />
         <option value="$PROJECT_DIR$/views/error.handlebars" />
         <option value="$PROJECT_DIR$/views/category.handlebars" />
-        <option value="$PROJECT_DIR$/views/showPost.handlebars" />
-        <option value="$PROJECT_DIR$/views/post.handlebars" />
         <option value="$PROJECT_DIR$/views/search.handlebars" />
         <option value="$PROJECT_DIR$/views/index.handlebars" />
+        <option value="$PROJECT_DIR$/views/showPost.handlebars" />
+        <option value="$PROJECT_DIR$/views/post.handlebars" />
       </list>
     </option>
   </component>
@@ -192,9 +185,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="1105" />
-    <option name="width" value="1918" />
-    <option name="height" value="1004" />
+    <option name="x" value="-1" />
+    <option name="y" value="-2" />
+    <option name="width" value="1368" />
+    <option name="height" value="731" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -352,8 +346,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,23 +489,24 @@
       <workItem from="1491995099948" duration="8644000" />
       <workItem from="1492012454609" duration="1512000" />
       <workItem from="1492020996972" duration="904000" />
+      <workItem from="1492023371777" duration="40000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93365000" />
+    <option name="totallyTimeSpent" value="93405000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1105" width="1918" height="1004" extended-state="0" />
+    <frame x="-1" y="-2" width="1368" height="731" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17556848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17524235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3246311" sideWeight="0.50184697" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24906786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25284737" sideWeight="0.49815303" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25340137" sideWeight="0.49815303" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -552,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,14 +731,10 @@
         <state relative-caret-position="288">
           <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding>
-            <marker date="1492021020642" expanded="true" signature="158:175" ph="..." />
-            <marker date="1492021020642" expanded="true" signature="250:262" ph="..." />
-            <marker date="1492021020642" expanded="true" signature="367:373" ph=" " />
-            <marker date="1492021020642" expanded="true" signature="445:456" ph="..." />
-            <marker date="1492021020642" expanded="true" signature="555:561" ph=" " />
-            <marker date="1492021020642" expanded="true" signature="664:676" ph="..." />
-            <marker date="1492021020642" expanded="true" signature="1367:1373" ph=" " />
-            <marker date="1492021020642" expanded="true" signature="1418:1484" ph="..." />
+            <marker date="1492021069542" expanded="true" signature="30:1664" ph="{...}" />
+            <marker date="1492021069542" expanded="true" signature="66:1555" ph="{...}" />
+            <marker date="1492021069542" expanded="true" signature="1609:1660" ph="{...}" />
+            <marker date="1492021069542" expanded="true" signature="1686:1783" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -753,7 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="626">
           <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/search.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="252">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -784,15 +773,7 @@
     <entry file="file://$PROJECT_DIR$/views/index.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/post.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -800,24 +781,34 @@
     <entry file="file://$PROJECT_DIR$/views/error.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/category.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="522">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/showPost.handlebars">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="18">
+          <caret line="25" column="8" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/post.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#a#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
