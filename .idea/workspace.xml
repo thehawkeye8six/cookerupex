@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97ed46ba-85e8-42a1-b0c5-22d11a637eaa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category.handlebars" afterPath="$PROJECT_DIR$/views/category.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/error.handlebars" afterPath="$PROJECT_DIR$/views/error.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.handlebars" afterPath="$PROJECT_DIR$/views/index.handlebars" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/post.handlebars" afterPath="$PROJECT_DIR$/views/post.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/search.handlebars" afterPath="$PROJECT_DIR$/views/search.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/showPost.handlebars" afterPath="$PROJECT_DIR$/views/showPost.handlebars" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +21,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="showPost.handlebars" pinned="false" current-in-tab="true">
+      <file leaf-file-name="showPost.handlebars" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/showPost.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
@@ -84,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.handlebars" pinned="false" current-in-tab="false">
+      <file leaf-file-name="post.handlebars" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/post.handlebars">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+            <state relative-caret-position="288">
+              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -174,9 +170,9 @@
         <option value="$PROJECT_DIR$/views/error.handlebars" />
         <option value="$PROJECT_DIR$/views/category.handlebars" />
         <option value="$PROJECT_DIR$/views/showPost.handlebars" />
-        <option value="$PROJECT_DIR$/views/post.handlebars" />
         <option value="$PROJECT_DIR$/views/search.handlebars" />
         <option value="$PROJECT_DIR$/views/index.handlebars" />
+        <option value="$PROJECT_DIR$/views/post.handlebars" />
       </list>
     </option>
   </component>
@@ -192,9 +188,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="1105" />
-    <option name="width" value="1918" />
-    <option name="height" value="1004" />
+    <option name="x" value="1918" />
+    <option name="y" value="1080" />
+    <option name="width" value="1924" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -494,24 +491,24 @@
       <workItem from="1491588146056" duration="1004000" />
       <workItem from="1491995099948" duration="8644000" />
       <workItem from="1492012454609" duration="1512000" />
-      <workItem from="1492020996972" duration="904000" />
+      <workItem from="1492020996972" duration="1733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93365000" />
+    <option name="totallyTimeSpent" value="94194000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1105" width="1918" height="1004" extended-state="0" />
-    <editor active="true" />
+    <frame x="1918" y="1080" width="1924" height="1031" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17556848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17501318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3246311" sideWeight="0.50184697" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24906786" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25284737" sideWeight="0.49815303" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24530387" sideWeight="0.49815303" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -789,14 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/post.handlebars">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/error.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -817,6 +806,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/post.handlebars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="39" />
           <folding />
         </state>
       </provider>
