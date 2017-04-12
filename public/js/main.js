@@ -17,6 +17,7 @@ $(document).ready(function () {
             '<option value="Quart">Quart(s)</option>' +
             '<option value="Tsp">Tsp</option>' +
             '<option value="Tbsp">Tbsp</option>' +
+            '<option value="Oz">Oz</option>' +
             '</select> &nbsp;' +
             '<input type="button" style="width:7em; background-color: red; color: white; font-weight: bold;" class="remCF btn btn-default" value="Remove"></td></tr><br/>');
     });
