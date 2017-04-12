@@ -112,6 +112,7 @@ router.get('/newPost', function (req, res) {
 
 router.post('/newPost', function (req, res) {
     // insert to db here
+    var newRecipeId;
     //// create promise chain
     Promise.resolve()
         .then(function () {
@@ -125,6 +126,7 @@ router.post('/newPost', function (req, res) {
         })
         .then(function (recipe) {
             var promises = [];
+            newRecipeId = recipe.id;
             for (var i = 1; ; i++) {
                 if (req.body['ingredient' + i]) {
                     promises.push(
@@ -144,14 +146,8 @@ router.post('/newPost', function (req, res) {
             }
             return Promise.all(promises);
         })
-        .then(function (i) {
-            res.render('showPost', {
-                category: req.body.category,
-                title: req.body.title,
-                description: req.body.description,
-                ingredient: req.body['ingredient' + i],
-                directions: req.body.directions
-            });
+        .then(function () {
+            res.redirect('showPost?id=' + newRecipeId);
         })
 });
 module.exports = router;
