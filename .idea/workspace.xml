@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="97ed46ba-85e8-42a1-b0c5-22d11a637eaa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/server.js" afterPath="$PROJECT_DIR$/bin/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/index.js" afterPath="$PROJECT_DIR$/models/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/post.js" afterPath="$PROJECT_DIR$/models/post.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="$PROJECT_DIR$/npm-debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/main.css" afterPath="$PROJECT_DIR$/public/stylesheets/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/category.handlebars" afterPath="$PROJECT_DIR$/views/category.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.handlebars" afterPath="$PROJECT_DIR$/views/index.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main.handlebars" afterPath="$PROJECT_DIR$/views/layouts/main.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/newPost.handlebars" afterPath="$PROJECT_DIR$/views/newPost.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/post.handlebars" afterPath="$PROJECT_DIR$/views/post.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/search.handlebars" afterPath="$PROJECT_DIR$/views/search.handlebars" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/showPost.handlebars" afterPath="$PROJECT_DIR$/views/showPost.handlebars" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/views/showPost.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+              <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#input#1;n#span#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#2;n#!!top" expanded="true" />
@@ -52,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/public/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+              <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding>
                 <marker date="1492002885732" expanded="true" signature="158:175" ph="..." />
                 <marker date="1492002885732" expanded="true" signature="250:262" ph="..." />
@@ -71,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/views/layouts/main.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="45" column="93" lean-forward="true" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
+              <caret line="45" column="93" lean-forward="false" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -83,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/views/newPost.handlebars">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
-              <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+              <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -445,12 +431,12 @@
       <workItem from="1491483954226" duration="1424000" />
       <workItem from="1491563387248" duration="22000" />
       <workItem from="1491588146056" duration="1004000" />
-      <workItem from="1491995099948" duration="8516000" />
+      <workItem from="1491995099948" duration="8644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90821000" />
+    <option name="totallyTimeSpent" value="90949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="1105" width="1924" height="1006" extended-state="7" />
@@ -771,7 +757,7 @@
     <entry file="file://$PROJECT_DIR$/views/newPost.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="34" column="55" lean-forward="true" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
+          <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#form#0;n#!!top" expanded="true" />
           </folding>
@@ -781,7 +767,7 @@
     <entry file="file://$PROJECT_DIR$/views/showPost.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+          <caret line="1" column="10" lean-forward="false" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#input#1;n#span#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#2;n#!!top" expanded="true" />
@@ -793,7 +779,7 @@
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
             <marker date="1492002885732" expanded="true" signature="158:175" ph="..." />
             <marker date="1492002885732" expanded="true" signature="250:262" ph="..." />
@@ -810,7 +796,7 @@
     <entry file="file://$PROJECT_DIR$/views/layouts/main.handlebars">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="45" column="93" lean-forward="true" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
+          <caret line="45" column="93" lean-forward="false" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
           <folding>
             <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
