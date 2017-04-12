@@ -23,23 +23,52 @@
     </a>
 </div>
 <hr>
-<div class="container container-table" >
-    <div class="row vertical-center-row">
-    {{#posts}}
-        <a href="/showPost?id={{id}}" style="color: inherit;">
-            <div class="col-sm-6"  style="width: 15em; padding-top: 5em">
-                <div class="card-deck" style="width: 20rem;">
-                    <div class="card-block" style="background-color: white; box-shadow: 3px 3px 3px #888888;">
-                        <img class="card-img-top" src="../images/image.png" alt="Card image cap" height="200px" width="200px">
-                        <div class="card-block">
-                            <h3 class="card-title" style="padding-left: 3px;">{{title}}</h3>
-                            <p class="card-text" style="padding-left: 3px;">{{description}}</p>
-                            <p class="card-text" style="padding-left: 3px;">{{category}}</p >
+
+
+<div class="container">
+    <div class="flex-row row">
+        {{#posts}}
+            <a href="/showPost?id={{id}}" style="color: inherit;">
+                <div class="col-xs-6 col-sm-4 col-lg-3">
+                    <div class="thumbnail" id="{{category}}">
+                        <div class="caption" style="background-color: white;">
+                            <h3>{{title}}</h3>
+                            <p class="flex-text text-muted">{{description}}</p>
+                            <div class="card-img-bottom" style=" color: #fff; height: 20rem; background: url(../uploads/{{image_path}}) center no-repeat; background-size: cover;">
+                            </div>
+                            <p class="flex-text text-muted">{{category}}</p>
+
                         </div>
+                        <!-- /.caption -->
                     </div>
+                    <!-- /.thumbnail -->
                 </div>
-            </div>
-        </a>
-    {{/posts}}
+            </a>
+        {{/posts}}
+
     </div>
+    <!-- /.flex-row  -->
 </div>
+<!-- /.container  -->
+
+<style type="text/css">
+    body {
+        background-color: rgba(0, 0, 0, 0.03);
+        padding-top: 15px;
+        font-family: 'Lato', sans-serif;
+    }
+    .flex-row  {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media only screen and (max-width : 480px){
+        .flex-row > [class*='col-'] {
+            width: 100%;
+        }
+        .flex-row  {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+</style>

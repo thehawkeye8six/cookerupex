@@ -40,7 +40,7 @@
 }
 #category5 {
   font-weight: bold;
-  background: #ad7340;
+  background: darkorange;
   color: white;
   text-align: center;
   height: 3em;
@@ -50,7 +50,7 @@
 }
 #category6 {
   font-weight: bold;
-  background: #ad4540;
+  background: red;
   color: white;
   text-align: center;
   height: 3em;
@@ -72,3 +72,24 @@
    color: white;
    font-weight: bold;
  }
+
+#Baking{
+   background-color: darkorange;
+ }
+
+#Bbq{
+  background-color: #ad4099;
+}
+
+#Pasta{
+  background-color: #8c40ad;
+}
+#Liquids{
+  background-color: #40ad52;
+}
+#Pub{
+  background-color: #4047ad;
+}
+#Dessert{
+  background-color: red;
+}

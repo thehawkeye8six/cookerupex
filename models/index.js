@@ -34,7 +34,7 @@ sequelize
     .authenticate()
     .then(function (err) {
         console.log('Conection Created');
-        return sequelize.sync({force:true}); //set to false when happy with setup
+        return sequelize.sync({force:false}); //set to false when happy with setup
     })
 
 db.sequelize = sequelize;

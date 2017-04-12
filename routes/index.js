@@ -50,7 +50,8 @@ router.get('/showPost', function (req, res) {
                 title: post.title,
                 description: post.description,
                 ingredient: post.Ingredients,
-                directions: post.directions
+                directions: post.directions,
+                image_path: post.image_path
             });
         });
 });
@@ -118,7 +119,8 @@ router.post('/newPost', function (req, res) {
                 category: req.body.category,
                 title: req.body.title,
                 description: req.body.description,
-                directions: req.body.directions
+                directions: req.body.directions,
+                image_path: req.body.image_path
             });
         })
         .then(function (recipe) {
