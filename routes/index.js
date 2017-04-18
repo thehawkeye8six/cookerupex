@@ -4,10 +4,9 @@ var db = require('../models');
 var sequelize = require('../app.js').sequelize;
 
 /* GET home page. */
-router.get('/', function (req, res) {
+outer.get('/', function (req, res) {
     var featured;
     var sponsored;
-    //go get all items from db with specific query
     Promise.resolve()
         .then(function () {
             return db.Post.findAll({
@@ -111,7 +110,6 @@ router.get('/newPost', function (req, res) {
 });
 
 router.post('/newPost', function (req, res) {
-    // insert to db here
     var newRecipeId;
     //// create promise chain
     Promise.resolve()
