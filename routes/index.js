@@ -4,7 +4,7 @@ var db = require('../models');
 var sequelize = require('../app.js').sequelize;
 
 /* GET home page. */
-outer.get('/', function (req, res) {
+router.get('/', function (req, res) {
     var featured;
     var sponsored;
     Promise.resolve()
